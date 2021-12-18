@@ -14,7 +14,11 @@ public class CmdHelp implements Command {
     @Override
     public void action(String[] args, MessageReceivedEvent event){
         event.getTextChannel().sendMessage("**COMANDOS: **\n `-help` - Mostra isso aqui..." +
-                "\n`-ping` - Mostra o ping...").queue();
+                "\n`-ping` - Mostra o ping...\n`-dice` - Rola dados no formato 1d1..." +
+                "\n`-join` - Entra no chat de voz...\n`-leave` - Sai da sala de voz..." +
+                "\n`-clone` - Copia sua mensagem...\n`-clean` - Limpa algumas mensagens antigas...\n" +
+                "`-bobaum` - Descobre ai pow...\n`-askme` - Faz uma pergunta para mim..." +
+                "\n`-alternativa` - Quer saber a resposta?").queue();
     }
 
     @Override

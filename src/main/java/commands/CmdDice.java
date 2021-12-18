@@ -97,4 +97,3 @@ public class CmdDice implements Command {
     }
 }
 
-

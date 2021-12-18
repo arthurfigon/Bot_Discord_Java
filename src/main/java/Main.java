@@ -26,6 +26,8 @@ public class Main {
         CommandHandler.commands.put("leave", new CmdLeaveChannel());
         CommandHandler.commands.put("clone", new CmdClone());
         CommandHandler.commands.put("dice", new CmdDice());
+        CommandHandler.commands.put("askme", new CmdAskMe());
+        CommandHandler.commands.put("alternativa", new CmdAlternativa());
 
         try{
             jda = builder.build();

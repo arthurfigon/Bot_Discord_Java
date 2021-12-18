@@ -12,6 +12,7 @@ public class CmdClone implements Command {
 
     @Override
     public void action(String[] args, MessageReceivedEvent event){
+        event.getTextChannel().deleteMessageById(event.getMessageId()).queue();
         String soTexto = event.getMessage().getContentDisplay();
         soTexto = soTexto.replace("-clone","");
         event.getTextChannel().sendMessage(soTexto).queue();
