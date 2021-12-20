@@ -28,6 +28,7 @@ public class Main {
         CommandHandler.commands.put("dice", new CmdDice());
         CommandHandler.commands.put("askme", new CmdAskMe());
         CommandHandler.commands.put("alternativa", new CmdAlternativa());
+        CommandHandler.commands.put("acorda", new CmdAcorda());
 
         try{
             jda = builder.build();
