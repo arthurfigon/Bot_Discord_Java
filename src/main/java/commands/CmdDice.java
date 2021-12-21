@@ -17,7 +17,7 @@ public class CmdDice implements Command {
         String soTexto = event.getMessage().getContentDisplay();
         soTexto = soTexto.replace("-dice ","");
         event.getTextChannel().sendMessage(event.getAuthor().getName()+": "+soTexto).queue();
-        soTexto = rolarDado(soTexto);
+        soTexto = rolarDado(args[0]);
         event.getTextChannel().sendMessage(soTexto).queue();
     }
 

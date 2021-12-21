@@ -12,7 +12,7 @@ public class MessageListener extends ListenerAdapter {
         if(event.getAuthor().isBot()){return ;}
         if(event.getChannelType() == ChannelType.PRIVATE){
             event.getAuthor().openPrivateChannel().complete().sendMessage("**"
-                    +event.getAuthor().getName()+"** fala cmg não parceiro").queue();
+                    +event.getAuthor().getName()+"** fala cmg naum, parcero...").queue();
             return;
         }
 
